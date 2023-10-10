@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			NER Classifer Demo
+		</div>
+		<h2>NER Classifer from JSON</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Introduce las oraciones</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="oraciones" rows="2" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
