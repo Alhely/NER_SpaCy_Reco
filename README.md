@@ -1,2 +1,10 @@
 # NER_SpaCy_Reco
-Esta es una API desarrollada en Flask para reconocer entidades nombradas (NER) con Python usando el modelo "es_core_news_sm" de SpaCy
+Esta es una API desarrollada en Flask para reconocer entidades nombradas (NER) con Python usando el modelo "es_core_news_sm" de SpaCy.
+
+Para reproducir:
+
+1. En una terminal ejecuta: pip install -r requirements.txt
+2. Descarga el modelo de deteccion: python -m spacy download es_core_news_sm
+3. Ve al directorio en el que se encuentran todos los archivos; una vez alli ejecuta lo siguiente en terminal: <flask run>
+4. En el browser introduce las oraciones en formato diccionario con "oraciones" como llave, el resultado será un JSON array con las entidades reconocidas.
+
